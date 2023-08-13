@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "URL Checker",
+  "version": "1.0",
+  "description": "Checks if a URL is in the list",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "logo16.png",
+      "48": "logo48.png",
+      "128": "logo128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
