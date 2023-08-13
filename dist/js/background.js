@@ -1,0 +1,1 @@
+chrome.tabs.onUpdated.addListener(((s,e,r)=>{e.url&&chrome.storage.sync.get(["visitedUrls"],(s=>{const r=s.visitedUrls||[];r.push(e.url),chrome.storage.sync.set({visitedUrls:r})}))}));

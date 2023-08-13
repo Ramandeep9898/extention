@@ -1,8 +1,14 @@
-import React from "react";
-import "./App.css";
+import VisitedUrls from "./VisitedUrls";
+import TrackUrls from "./TrackUrls";
 
 function App() {
-  return <div className="App">Hello World</div>;
+  return (
+    <div className="App">
+      Hello World
+      <VisitedUrls />
+      <TrackUrls />
+    </div>
+  );
 }
 
 export default App;
