@@ -8,7 +8,6 @@ function TrackUrls() {
   const handleAdd = () => {
     setTrackedUrls([...trackedUrls, url]);
     setUrl("");
-    // TODO: save tracked URLs to storage
   };
 
   return (
