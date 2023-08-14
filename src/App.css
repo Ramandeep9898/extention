@@ -2,9 +2,92 @@
   color: white;
   text-align: center;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 
 .container {
-  width: 15rem;
-  height: 15rem;
-  background-color: green;
+  width: 500px;
+  height: 500px;
+}
+
+.list {
+  color: #000;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.card {
+  width: 400px;
+  text-align: start;
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 500;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.size-25 {
+  width: 25px;
+  height: 25px;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.card-visiters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.card-btn {
+  border: none;
+  background-color: transparent;
+  padding: none;
+  cursor: pointer;
+}
+.input-container {
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.input-wrapper > input {
+  padding: 8px 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+.btn-black {
+  background-color: #000;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  gap: 8px;
+}
+.input-wrapper {
+  width: min-content;
 }

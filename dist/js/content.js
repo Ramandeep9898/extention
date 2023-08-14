@@ -1,0 +1,1 @@
+function handleLinkClick(e){e.target.href&&chrome.runtime.sendMessage({message:"urlClicked"})}document.addEventListener("click",handleLinkClick);

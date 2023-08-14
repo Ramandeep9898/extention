@@ -5,7 +5,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   entry: {
     index: "./src/index.tsx",
-    background: "./src/background.js", // make sure this is ".ts" if you're writing TypeScript for the background script
+    background: "./src/background.js",
   },
   mode: "production",
   module: {
@@ -35,6 +35,10 @@ module.exports = {
         {
           from: path.resolve(__dirname, "manifest.json"),
           to: path.resolve(__dirname, "dist", "manifest.json"),
+        },
+        {
+          from: path.resolve(__dirname, "src", "content.js"),
+          to: path.resolve(__dirname, "dist", "js", "content.js"), // Adjusted path to put content.js in the js folder
         },
       ],
     }),

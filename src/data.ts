@@ -1,19 +1,27 @@
 export const data = [
-  { id: "hdfkd", url: "https://www.google.com/" },
   {
-    id: "dhd",
+    url: "https://www.google.com/",
+    count: 0,
+    name: "Google",
+  },
+  {
+    name: "Slack",
     url: "https://slack.com/intl/en-in/",
+    count: 0,
   },
   {
-    id: "kdjf",
     url: "https://github.com/",
+    count: 0,
+    name: "Github",
   },
   {
-    id: "alsdj",
     url: "https://medium.com/",
+    count: 0,
+    name: "Medium",
   },
   {
-    id: "s,ds",
     url: "https://hashnode.com/",
+    count: 0,
+    name: "Hashnode",
   },
 ];

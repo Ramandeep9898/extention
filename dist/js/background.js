@@ -1,1 +1,1 @@
-chrome.tabs.onUpdated.addListener(((s,e,r)=>{e.url&&chrome.storage.sync.get(["visitedUrls"],(s=>{const r=s.visitedUrls||[];r.push(e.url),chrome.storage.sync.set({visitedUrls:r})}))}));
+chrome.tabs.onUpdated.addListener(((s,e,o)=>{console.log("hello"),e.url&&chrome.storage.sync.get(["visitedUrls"],(s=>{const o=s.visitedUrls||[];o.push(e.url),console.log(o),chrome.storage.sync.set({visitedUrls:o})}))}));

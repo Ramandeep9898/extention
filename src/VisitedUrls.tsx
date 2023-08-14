@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-
+import { data } from "./data";
 function VisitedUrls() {
-  const [urls, setUrls] = useState<string[]>([]);
+  const [urls, setUrls] = useState<any>([]);
 
   useEffect(() => {
     // @ts-ignore
@@ -13,9 +13,11 @@ function VisitedUrls() {
   return (
     <div>
       <h3>Visited URLs:</h3>
-      <ul>
-        {urls.map((url, index) => (
-          <li key={index}>{url}</li>
+      <ul className="list">
+        {urls.map((url: string, index: any) => (
+          <li key={index} className="list-item">
+            {url}
+          </li>
         ))}
       </ul>
       <p>Total pages loaded: {urls.length}</p>
